@@ -1,74 +1,393 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Banjara Kathi Rolls & Momos</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#E10F1F" />
+    <meta name="description" content="Banjara Kathi Rolls & Momos in Sector 13, Karnal. Karnal's favourite Kathi Rolls and Momos — fresh, flavorful and irresistible. Order on WhatsApp." />
+    <meta name="keywords" content="Banjara, Kathi Rolls, Momos, Karnal, Sector 13, street food, best momos Karnal, paneer roll, chicken momos" />
+    <meta property="og:title" content="Banjara Kathi Rolls & Momos · Karnal" />
+    <meta property="og:description" content="Karnal's favourite Kathi Rolls & Momos. Fresh. Flavorful. Irresistible." />
+    <meta property="og:type" content="restaurant" />
+    <title>Banjara Kathi Rolls & Momos · Karnal's Favourite Street Food</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet" />
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav class="navbar">
-<div class="logo">🔥 BANJARA</div>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#offers">Offers</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<a class="order-btn" href="#contact">Order Now</a>
-</nav>
-
-<header class="hero">
-<div class="hero-content">
-<h1>Karnal's Favourite<br>Kathi Rolls & Momos</h1>
-<p>Fresh • Flavorful • Irresistible</p>
-<div class="hero-buttons">
-<a href="#menu" class="btn primary">View Menu</a>
-<a href="#contact" class="btn secondary">Order Now</a>
-</div>
-</div>
+<!-- ========================== NAV ========================== -->
+<header class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="#home" class="logo">
+            <span class="wordmark">banjara</span>
+            <span class="banner-arc">Kathi Rolls &amp; Momos</span>
+        </a>
+        <nav class="nav__links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="tel:+918920152061" class="btn btn--ghost nav__call">
+            <i data-lucide="phone"></i><span>+91 89201 52061</span>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:+918920152061" class="btn btn--primary">
+                <i data-lucide="phone"></i> Call +91 89201 52061
+            </a>
+        </div>
+    </div>
 </header>
 
-<section id="about">
-<h2>About Banjara</h2>
-<p>Serving delicious rolls, wraps and momos crafted with authentic spices and fresh ingredients.</p>
+<!-- ========================== HERO ========================== -->
+<section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__glow"></div>
+
+    <div class="container hero__grid">
+        <div class="hero__copy reveal">
+            <div class="hero__pill">
+                <i data-lucide="flame"></i>
+                <span>Karnal's #1 Street Food · A venture by Grill Masters</span>
+            </div>
+
+            <div class="hero__logo">
+                <span class="wordmark wordmark--xl">banjara</span>
+                <span class="banner-arc banner-arc--lg">Kathi Rolls &amp; Momos</span>
+            </div>
+
+            <h1 class="hero__h1">
+                Karnal's Favourite
+                <br />
+                <span class="text-warm">Rolls &amp; Momos</span>
+            </h1>
+
+            <p class="hero__sub">
+                Fresh. Flavorful. Irresistible. Handcrafted street food made with
+                <strong>authentic Grill Masters recipes</strong> and the finest ingredients.
+            </p>
+
+            <div class="hero__cta">
+                <a class="btn btn--primary" target="_blank" rel="noreferrer"
+                   href="https://wa.me/918920152061?text=Hi%20Banjara!%20I'd%20like%20to%20place%20an%20order.">
+                    Order Now <i data-lucide="arrow-right"></i>
+                </a>
+                <a class="btn btn--ghost" href="#menu">
+                    <i data-lucide="utensils"></i> View Menu
+                </a>
+            </div>
+
+            <div class="hero__trust">
+                <div class="stars">
+                    <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    <strong>4.9</strong>
+                    <span>· 1,280+ Google reviews</span>
+                </div>
+                <span class="sep">|</span>
+                <div><strong>Half plates from ₹50</strong></div>
+            </div>
+        </div>
+
+        <aside class="hero__card reveal">
+            <img src="https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&w=900&q=80" alt="Signature Kathi Roll" />
+            <div class="hero__special">
+                <div class="eyebrow eyebrow--gold">Today's Special</div>
+                <div class="hero__special-name">Afghani Chicken Momos</div>
+                <div class="hero__special-desc">Creamy, smoky, irresistible.</div>
+                <div class="hero__special-price">₹220</div>
+            </div>
+            <div class="hero__badge">
+                <i data-lucide="star"></i> <strong>4.9</strong> <span>Google</span>
+            </div>
+        </aside>
+    </div>
+
+    <div class="hero__scroll-cue"><span></span></div>
 </section>
 
-<section id="menu">
-<h2>Popular Menu</h2>
-<div class="grid">
-<div class="card"><h3>Paneer Roll</h3><p>₹99</p></div>
-<div class="card"><h3>Tandoori Paneer Roll</h3><p>₹129</p></div>
-<div class="card"><h3>Chicken Roll</h3><p>₹119</p></div>
-<div class="card"><h3>Butter Chicken Roll</h3><p>₹149</p></div>
-<div class="card"><h3>Veg Momos</h3><p>₹89</p></div>
-<div class="card"><h3>Chicken Afghani Momos</h3><p>₹149</p></div>
-</div>
+<!-- ========================== ABOUT ========================== -->
+<section class="section" id="about">
+    <div class="container grid-2">
+        <div class="reveal about__media">
+            <img src="https://images.pexels.com/photos/14803087/pexels-photo-14803087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=900" alt="Banjara kitchen interior" />
+            <div class="about__floating">
+                <div class="about__years text-warm">10+</div>
+                <div class="eyebrow">Years of Flavor</div>
+                <p>Serving Karnal with love — one roll & one momo at a time.</p>
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="eyebrow">Our Story</div>
+            <h2 class="h2">Born from a <span class="text-warm">love</span> for honest street food.</h2>
+            <div class="about__copy">
+                <p>Banjara started as a humble corner in Sector 13, Karnal — a place where flavor came first and short-cuts were never on the menu. Today, we serve thousands of happy customers every week.</p>
+                <p>Every Kathi roll is hand-stuffed with marinated, freshly cooked fillings. Every momo is folded by hand and steamed or fried to order. We make our signature sauces in-house, daily.</p>
+            </div>
+            <div class="about__stats">
+                <div class="glass stat">
+                    <i data-lucide="users"></i>
+                    <div class="stat__value">50K+</div>
+                    <div class="eyebrow">Happy Customers</div>
+                </div>
+                <div class="glass stat">
+                    <i data-lucide="award"></i>
+                    <div class="stat__value">4.9★</div>
+                    <div class="eyebrow">Google Rating</div>
+                </div>
+                <div class="glass stat">
+                    <i data-lucide="sparkles"></i>
+                    <div class="stat__value">20+</div>
+                    <div class="eyebrow">Signature Dishes</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="offers">
-<h2>Special Offers</h2>
-<div class="grid">
-<div class="offer">🎉 Student Special 20% OFF</div>
-<div class="offer">👨‍👩‍👧 Family Combo</div>
-<div class="offer">🔥 Weekend Deal</div>
-</div>
+<!-- ========================== MENU ========================== -->
+<section class="section" id="menu">
+    <div class="container">
+        <div class="section__head">
+            <div>
+                <div class="eyebrow">Signature Menu</div>
+                <h2 class="h2">Crafted to <span class="text-warm">crave</span>.</h2>
+                <p class="muted">From hand-rolled paratha to handmade momos — every dish is fresh, hot, and bursting with flavor.</p>
+            </div>
+            <a class="btn btn--primary" target="_blank" rel="noreferrer"
+               href="https://wa.me/918920152061?text=Hi%20Banjara!%20I'd%20like%20to%20order.">
+                Order via WhatsApp <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="pill-row" id="menuCategories"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+    </div>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<p>Shop No. 35, Kalra Market, Urban Estate, Sector 13, Karnal</p>
-<p>📞 +91 89201 52061</p>
-<a class="btn primary" href="https://wa.me/918920152061">WhatsApp Order</a>
+<!-- ========================== WHY ========================== -->
+<section class="section section--texture" id="why">
+    <div class="container">
+        <div class="section__head section__head--center">
+            <div class="eyebrow">Why Choose Banjara</div>
+            <h2 class="h2">Six reasons we're <span class="text-warm">Karnal's favourite</span>.</h2>
+        </div>
+        <div class="why-grid" id="whyGrid"></div>
+    </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/918920152061"><i class="fab fa-whatsapp"></i></a>
+<!-- ========================== REVIEWS ========================== -->
+<section class="section" id="reviews">
+    <div class="container">
+        <div class="section__head">
+            <div>
+                <div class="eyebrow">Loved by Customers</div>
+                <h2 class="h2">What Karnal is <span class="text-warm">saying</span>.</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="round-btn glass" id="revPrev" aria-label="Previous review"><i data-lucide="chevron-left"></i></button>
+                <button class="round-btn glass" id="revNext" aria-label="Next review"><i data-lucide="chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="reviews" id="reviewsGrid"></div>
+        <div class="dots" id="revDots"></div>
+    </div>
+</section>
 
-<footer>
-<p>© 2026 Banjara Kathi Rolls & Momos</p>
+<!-- ========================== GALLERY ========================== -->
+<section class="section" id="gallery">
+    <div class="container">
+        <div class="section__head section__head--center">
+            <div class="eyebrow">Gallery</div>
+            <h2 class="h2">A feast for the <span class="text-warm">eyes</span>.</h2>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+</section>
+
+<!-- ========================== OFFERS ========================== -->
+<section class="section" id="offers">
+    <div class="container">
+        <div class="section__head">
+            <div>
+                <div class="eyebrow">Special Offers</div>
+                <h2 class="h2">More <span class="text-warm">flavor</span>, less rupees.</h2>
+            </div>
+        </div>
+        <div class="offers-grid" id="offersGrid"></div>
+    </div>
+</section>
+
+<!-- ========================== LOCATION ========================== -->
+<section class="section" id="location">
+    <div class="container grid-2">
+        <div class="reveal">
+            <div class="eyebrow">Visit Us</div>
+            <h2 class="h2">Find us in <span class="text-warm">Sector 13</span>, Karnal.</h2>
+            <ul class="info-list">
+                <li>
+                    <span class="info-icon"><i data-lucide="map-pin"></i></span>
+                    <div>
+                        <div class="eyebrow eyebrow--mute">Address</div>
+                        <div>Shop No. 35, Kalra Market, Urban Estate, Sector 13, Karnal, Haryana 132001</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="info-icon"><i data-lucide="clock"></i></span>
+                    <div>
+                        <div class="eyebrow eyebrow--mute">Opening Hours</div>
+                        <div>11:00 AM – 11:00 PM (All Days)</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="info-icon"><i data-lucide="phone"></i></span>
+                    <div>
+                        <div class="eyebrow eyebrow--mute">Phone</div>
+                        <a href="tel:+918920152061">+91 89201 52061</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hero__cta" style="margin-top:2rem">
+                <a class="btn btn--primary" target="_blank" rel="noreferrer"
+                   href="https://www.google.com/maps/search/?api=1&query=Banjara+Kathi+Rolls+Momos+Sector+13+Karnal">
+                   <i data-lucide="navigation"></i> Get Directions
+                </a>
+                <a class="btn btn--ghost" href="tel:+918920152061">
+                   <i data-lucide="phone"></i> Call to Order
+                </a>
+            </div>
+        </div>
+        <div class="map reveal">
+            <iframe title="Banjara location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Kalra+Market+Sector+13+Karnal+Haryana&output=embed"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- ========================== CONTACT ========================== -->
+<section class="section" id="contact">
+    <div class="container contact-grid">
+        <div class="reveal">
+            <div class="eyebrow">Reach Out</div>
+            <h2 class="h2">Hungry? <span class="text-warm">Let's talk.</span></h2>
+            <p class="muted">Call us, message us on WhatsApp, or drop a quick note here for catering, bulk orders or general enquiries. We reply fast — promise.</p>
+            <div class="quick-links">
+                <a target="_blank" rel="noreferrer" href="https://wa.me/918920152061" class="qlink qlink--wa">
+                    <span class="qlink__icon"><i data-lucide="message-circle"></i></span>
+                    <div><div class="eyebrow eyebrow--mute">WhatsApp</div><div>Chat with us</div></div>
+                    <span class="qlink__arrow">→</span>
+                </a>
+                <a href="tel:+918920152061" class="qlink qlink--call">
+                    <span class="qlink__icon"><i data-lucide="phone"></i></span>
+                    <div><div class="eyebrow eyebrow--mute">Call</div><div>+91 89201 52061</div></div>
+                    <span class="qlink__arrow">→</span>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Banjara+Kathi+Rolls+Momos+Sector+13+Karnal" class="qlink qlink--maps">
+                    <span class="qlink__icon"><i data-lucide="map-pin"></i></span>
+                    <div><div class="eyebrow eyebrow--mute">Visit</div><div>Open in Google Maps</div></div>
+                    <span class="qlink__arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <form class="glass contact-form" id="contactForm" onsubmit="return false;">
+            <h3 class="h3">Send us a message</h3>
+            <p class="muted small">We'll receive it instantly on WhatsApp.</p>
+            <div class="form-row">
+                <label>
+                    <span class="eyebrow eyebrow--mute">Name</span>
+                    <input required name="name" placeholder="Your name" />
+                </label>
+                <label>
+                    <span class="eyebrow eyebrow--mute">Phone</span>
+                    <input required name="phone" placeholder="+91 ..." />
+                </label>
+            </div>
+            <label>
+                <span class="eyebrow eyebrow--mute">Message</span>
+                <textarea required name="message" rows="5" placeholder="Tell us what you'd like to order or ask..."></textarea>
+            </label>
+            <div class="form-foot">
+                <div id="formStatus" class="form-status"></div>
+                <button class="btn btn--primary" id="formSubmit">
+                    <i data-lucide="send"></i> Send via WhatsApp
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ========================== FOOTER ========================== -->
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a href="#home" class="logo">
+                <span class="wordmark">banjara</span>
+                <span class="banner-arc">Kathi Rolls &amp; Momos</span>
+            </a>
+            <p class="muted">Karnal's favourite Kathi Rolls & Momos — fresh, flavorful and irresistible. Made with love in Sector 13.</p>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+        <div>
+            <div class="eyebrow eyebrow--mute">Contact</div>
+            <ul class="footer__list">
+                <li><i data-lucide="map-pin"></i><span>Shop No. 35, Kalra Market, Urban Estate, Sector 13, Karnal, Haryana 132001</span></li>
+                <li><i data-lucide="phone"></i><a href="tel:+918920152061">+91 89201 52061</a></li>
+                <li><i data-lucide="mail"></i><a target="_blank" rel="noreferrer" href="https://wa.me/918920152061">WhatsApp Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="eyebrow eyebrow--mute">Hours</div>
+            <ul class="footer__list">
+                <li><i data-lucide="clock"></i><span>11:00 AM – 11:00 PM · All Days</span></li>
+                <li class="small">Dine-In · Takeaway · Online Orders</li>
+            </ul>
+            <div class="eyebrow eyebrow--mute" style="margin-top:1.5rem">Explore</div>
+            <div class="footer__nav">
+                <a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__copy">
+        <span>© <span id="year"></span> Banjara Kathi Rolls & Momos. All rights reserved.</span>
+        <span>Crafted with <span style="color:#E10F1F">♥</span> in Karnal</span>
+    </div>
 </footer>
+
+<!-- Floating WhatsApp -->
+<a class="float-wa" target="_blank" rel="noreferrer"
+   href="https://wa.me/918920152061?text=Hi%20Banjara!%20I'd%20like%20to%20place%20an%20order."
+   aria-label="Order on WhatsApp">
+    <span class="float-wa__icon">
+        <i data-lucide="message-circle"></i>
+    </span>
+    <span class="float-wa__label">Order Now</span>
+</a>
 
 <script src="script.js"></script>
 </body>
